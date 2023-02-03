@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Kokoro;
+    src: url(Kokoro-Regular.ttf);
+}
+
+body {
+    background-image: url(background.png);
+}
+.nav-bar {
+    background-color: #B6A497;
+    display: flex;
+    justify-content: space-between;
+    height: 140px;
+    margin-bottom: 19px;
+}
+.menu img {
+    width: 90px;
+    margin: 35px 511px 58px 34px;
+    line-height: 36.6px;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right-nav button {
+    background-color: #F2E8E0;
+    border: none;
+    outline: none;
+    margin: 37px 35px 33px 0;
+    padding: 15px;
+    line-height: 36.6px;
+}
+
+.right-nav a {
+    font-family: 'Mate SC', serif;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    color: black;
+}
+
+input {
+    width: 57rem;
+    height: 69px;
+    margin: 19px 309px 17px 280px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    font-family: 'Khula', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    padding: 15px 80px 5px 15px;
+    line-height: 51.38px;
+    border: none;
+}
+
+input [type=text] {
+    font-family: 'Khula', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+} 
+
+.search-bar {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 580px;
+    transform: translate(50%, -50%);
+}
+
+.main-content {
+    background-color: #F1D3BD;
+    position: absolute;
+    width: 1202px;
+    height: 700px;
+    display: grid;
+    margin: 17px 140px 67px 93px;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.main-content h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-style: normal;
+    font-size: 125px;
+    line-height: 181px;
+    width: 504px;
+    margin: 15px 48px 10px 41px;
+}
+
+.page-description {
+    font-family: 'Kokoro', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    width: 525px;
+    height: 307px;
+    margin: 52px 3px 10px 65px;
+    line-height: 48px;
+}
+
+.register button {
+    width: 265px;
+    height: 70px;
+    background-color: #FFFFFF;
+    border: none;
+    margin: 36px 161px 136px 167px;
+
+}
+.register a {
+    width: 200px;
+    height: 40px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.main-right h2 {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 55px;
+    color: #000000;
+    width: 258px;
+    height: 55px;
+    margin: 53px 168px 40px 150px;
+}
+
+.main-right img {
+    width: 145px;
+    height: auto;
+    margin-right: 49px;
+    margin-left: 3px;
+}
+
+.bottom-books {
+    margin-top: 42px;
+    margin-bottom: 35px;
+}
