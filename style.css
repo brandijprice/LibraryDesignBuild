@@ -153,3 +153,62 @@ input [type=text] {
     margin-top: 42px;
     margin-bottom: 35px;
 }
+
+/* About Page CSS */
+
+.about-body {
+    background: #F1D3BD;
+    max-width: 1431px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+    padding: 46px 136px 167px 70px;
+}
+
+.about-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1225px;
+    margin: 53px 136px 167px 70px;
+}
+
+.about-main_left h1 {
+    position: relative;
+    width: 431px;
+    height: 181px;
+    font-family: 'Kaushan Script', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 125px;
+    line-height: 181px;
+}
+
+.about-main_left img {
+    position: absolute;
+    width: 578px;
+    height: 577px;
+    margin-right: 5px;
+}
+
+.about-right_background {
+    background-color: #FFFFFF;
+    height: 577px;
+    width: 647px;
+    display: grid;
+    margin-top: 180px;
+    margin-bottom: 167px;
+}
+
+.about-right_background p {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #000000;
+    padding: 100px 17px;
+}
+
+/* End about page style */
+
