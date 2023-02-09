@@ -6,11 +6,11 @@
 
 @font-face {
     font-family: Kokoro;
-    src: url(Kokoro-Regular.ttf);
+    src: url(/font/Kokoro-Regular.ttf);
 }
 
-body {
-    background-image: url(background.png);
+.welcome-page {
+    background-image: url(/images/background.png);
 }
 .nav-bar {
     background-color: #B6A497;
