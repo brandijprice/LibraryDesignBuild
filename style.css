@@ -212,3 +212,262 @@ input [type=text] {
 
 /* End about page style */
 
+/* Contact Form */
+
+.contact-page_background {
+    position: absolute;
+    background: #F1D3BD;
+    padding: 75px 343px 49px 343px;
+}
+
+.contact-background {
+    background: url(images/contact-background.png);
+    width: 745px;
+    margin-top: 6px;
+    margin-bottom: 34px;
+}
+
+.contact-form  h1{
+    margin: 6px 95px 34px 95px;
+    width: 554px;
+    height: 181px;
+    left: 439px;
+    top: 81px;
+    font-family: 'Kaushan Script', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 125px;
+    line-height: 181px;
+    color: #000000;
+    text-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contact-form form {
+    text-align: center;
+}
+
+.contact-form input {
+    width: 503px;
+    margin-left: 121px;
+    margin-right: 121px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 0;
+}
+
+#name, #email {
+    font-family: 'Khula', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 39px;
+    background: #FFFFFF;
+    color: #BCAEAE;
+}
+
+#email {
+    margin-top: 74px;
+    margin-bottom: 64px;
+}
+
+#name, #email {
+    height: 70px;
+}
+
+#message {
+    width: 503px;
+    height: 264px;
+}
+
+textarea {
+    width: 92px;
+    height: 39px;
+    font-family: 'Khula', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 39px;
+    border: none;
+    padding: 20px 15px;
+    background: #FFFFFF;
+    color: #BCAEAE;
+}
+
+#submit {width: 256px;
+    height: 54px;
+    background: #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 2px 60px;
+    cursor: pointer;
+}
+
+/*End Contact Page style*/
+
+/* Profile style */
+
+.profile {
+    width: 1440px;
+    background: #F1D3BD;
+    padding: 101px 145px 106px 35px;
+}
+
+.profile-header {
+    display: flex;
+}
+
+.profile h1 {
+    font-family: 'Mate SC', serif;
+    width: 392px;
+    height: 98px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 98px;
+    text-align: center;
+    color: #000000;
+    margin-right: 35px;
+}
+
+.profile-header img {
+    height: 41px;
+    margin-top: 35px;
+}
+
+.profile p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    width: 339px;
+    height: 34px;
+    text-align: center;
+    margin: 19px 1066px 98px 35px;
+}
+
+.profile-container {
+    display: flex;
+}
+
+.contact-info-container {
+    width: 770px;
+    height: 910px;
+    left: 35px;
+    top: 350px;
+    background: #F3F3F3;
+}
+
+.contact-header p {
+    font-family: 'Open Sans', sans-serif;
+    width: 770px;
+    height: 52px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    text-align:left;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 0px 571px 9px 0;
+    padding: 9px 571px 9px 11px;
+    background-color: #D9D9D9;
+}
+
+label {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: left;
+    float: left;
+    max-width: 252px;
+}
+
+.form-input {
+    display: flex;
+    margin: 20px 0;
+    padding-left: 17px;
+}
+
+.form-background input, .form-background select {
+    position: relative;
+    height: 35px;
+    margin-left: 15px;
+    border-radius: 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    display: inline-flex;
+    background-color: #D9D9D9;
+    color: #000000;
+    padding: 1px 0;
+}
+
+.form-background input {
+    width: 100%;
+}
+
+#name, #email {
+    height: 35px;
+    background-color: #D9D9D9;
+    color: #000000;
+    padding: 10px 5px;
+}
+
+#email {
+    margin-right: 50px;
+}
+
+.profile-picture-container {
+    width: 350px;
+    height: 350px;
+    background: #F3F3F3;
+    margin-left: 140px;
+    margin-right: 145px;
+    text-align: center;
+}
+
+.profile-picture-container p {
+    width: 350px;
+    height: 70px;
+    background: #D9D9D9;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 35px;
+    text-align: center;
+    padding: 18px 80px;
+}
+
+.picture-main img {
+    margin-bottom: 28px;
+}
+
+.profile-picture-container button {
+    background: #ABABAB;
+    padding: 13px 34px;
+    border: none;
+    margin-bottom: 17px;
+}
+
+.profile-picture-container a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #000000;
+    text-transform: uppercase;
+}

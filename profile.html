@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Registration</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="profile">
+    <div class="profile-header">
+      <h1>My Profile</h1>
+      <img src="images/yellow-question.png" alt="profile" width="45" />
+    </div>
+    <p>Fill out your registration here</p>
+    <div class="profile-container">
+      <div class="contact-info-container">
+        <div class="contact-header">
+          <p>Contact Info</p>
+        </div>
+        <div class="form-background">
+          <form action="/profile.php">
+            <div class="form-input">
+              <label for="title">
+                <img
+                  src="images/required-symbol.png"
+                  alt="required"
+                  width="18"
+                />
+                Title:</label
+              >
+              <select name="title" id="title" required>
+                <option value="select">select one</option>
+                <option value="Mr">Mr.</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Ms">Ms.</option>
+              </select>
+            </div>
+            <div class="form-input">
+              <label for="name"
+                ><img
+                  src="images/required-symbol.png"
+                  alt="required"
+                  width="18"
+                />
+                Name:</label
+              ><input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="First and Last Name"
+                required
+              />
+            </div>
+            <div class="form-input">
+              <label for="username"
+                ><img
+                  src="images/required-symbol.png"
+                  alt="required"
+                  width="18"
+                />
+                Username:</label
+              >
+              <input type="text" id="username" name="username" required />
+            </div>
+            <div class="form-input">
+              <label for="birthday"
+                ><img
+                  src="images/required-symbol.png"
+                  alt="required"
+                  width="18"
+                />
+                D.O.B:</label
+              >
+              <input type="date" id="birthday" name="birthday" required />
+            </div>
+            <div class="form-input">
+              <label for="email"
+                ><img
+                  src="images/required-symbol.png"
+                  alt="required"
+                  width="18"
+                />
+                Email Address:</label
+              >
+              <input type="text" id="email" name="email" required />
+            </div>
+            <div class="form-input">
+              <label for="password"
+                ><img
+                  src="images/required-symbol.png"
+                  alt="required"
+                  width="18"
+                /> 
+                Password:</label
+              >
+              <input type="password" id="password" name="password" required />
+            </div>
+            <div class="form-input">
+              <label for="name">Re-type Password:</label>
+              <input type="text" id="retype=password" name="retype-password" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="profile-picture-container">
+        <div class="picture-header">
+          <p>Your Picture</p>
+        </div>
+        <div class="picture-main">
+          <img
+            src="images/default-profile.png"
+            alt="default-profile"
+            width="114"
+          />
+        </div>
+        <button><a href="#">Upload</a></button>
+      </div>
+    </div>
+  </body>
+</html>
