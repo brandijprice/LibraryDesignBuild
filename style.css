@@ -75,7 +75,7 @@ input [type=text] {
 .search-icon {
     position: absolute;
     top: 50%;
-    right: 580px;
+    margin-left: 68.75rem;
     transform: translate(50%, -50%);
 }
 
@@ -573,3 +573,123 @@ label {
 }
 
 /* End Book Listing Page */
+
+/* Book Description style */
+
+body {
+    background: #F1D3BD;
+}
+
+.description-container {
+    margin: 94px 35px 44px 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.description-left {
+    margin-right: 50px;
+}
+
+.description-book-info {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.description-book-info img {
+    width: 245px;
+    height: auto;
+    margin-right: 35px;
+}
+
+.rating {
+    margin-top: 5px;
+    margin-left: -95px;
+}
+
+.rating img {
+    margin-right: 5px;
+    width: 41px;
+    height: 47px;
+}
+
+.book-info {
+    text-align: center;
+    align-items: center;
+}
+
+.book-info h2 {
+    font-family: 'Kaushan Script', cursive;
+    width: 223px;
+    height: 116px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-left: 35px;
+}
+
+.book-info h3 {
+    font-family: 'Koulen', cursive;
+    font-weight: 400;
+    font-size: 30px;
+    width: 315px;
+    height: 57px;
+}
+
+.book-info p {
+    font-family: 'Karma', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    width: 315px;
+    height: 57px;
+}
+
+.description-book-info button {
+    font-family: 'Koulen', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    width: 280px;
+    height: 70px;
+    background: #FFFAFA;
+    margin: 30px 105px 16px 15px;
+    border: none;
+}
+
+.description-category {
+    margin-top: 16px;
+    margin-bottom: 35px;
+}
+
+.description-category p {
+    font-family: 'Koulen', cursive;
+    width: 650px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.description-category a {
+    color: #000000;
+}
+
+.quotes {
+    width: 650px;
+    height: 385px;
+    background: #E7E2E2;
+    padding: 25px 15px;
+}
+
+.quotes p {
+    font-family: 'Kosugi Maru', sans-serif;
+    width: 633px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 20px;
+}
