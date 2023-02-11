@@ -471,3 +471,105 @@ label {
     color: #000000;
     text-transform: uppercase;
 }
+
+/* Book Listing Style */
+
+.listing-body {
+    background-color: #F1D3BD;
+}
+
+.listing-body h1 {
+    text-align: center;
+    margin: 36px 357px 52px 372px;
+    font-family: 'Kaushan Script', cursive;
+    width: 706px;
+    height: 87px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.book-listing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.book-listing-left {
+    margin-left: 35px;
+}
+
+.book-listing-right {
+    margin-right: 35px;
+    margin-left: 20px;
+}
+
+.book-listing-container {
+    display: flex;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.book-listing-label {
+    width: 70px;
+    height: 385px;
+    background: #1A1818;
+}
+
+.book-listing-label img {
+    width: 50px;
+    height: auto;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.book-listing-main {
+    display: flex;
+    width: 595px;
+    height: 385px;
+    background: #D9D9D9;
+    padding: 35px 13px 25px 33px;
+}
+
+.book-listing-main img {
+    width: 200px;
+    height: 327px;
+    margin-right: 31px;
+}
+
+.book-listing-info {
+    text-align: center;
+}
+
+.book-listing-info h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+    margin-left: 14px;
+    margin-right: 15px;
+}
+
+.author {
+    margin-top: 6px;
+    margin-bottom: 10px;
+    font-family: 'Karma', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 36px;
+}
+
+.description {
+    width: 318px;
+    font-family: 'Karma', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+}
+
+/* End Book Listing Page */
