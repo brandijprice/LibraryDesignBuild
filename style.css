@@ -693,3 +693,181 @@ body {
     color: #000000;
     margin-bottom: 20px;
 }
+
+/* End of Description Style*/
+/* Checkout Page Style*/
+
+.history-container, .book-history-info, .checkout-info, .refine-header, .selection {
+    display: flex;
+}
+
+.refine-title p {
+    font-weight: 800;
+    font-size: 35px;
+    text-align: left;
+}
+
+.refine-divider {
+    width: 245px;
+    height: 0px;
+    border: 2px solid #000000;
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+.refine-section {
+    width: 315px;
+    height: auto;
+    background: #BCAEAE;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    padding-top: 45px;
+    padding-left: 35px;
+}
+
+.refine-section img {
+    max-width: 49px;
+    max-height: 51px;
+}
+
+.refine-header {
+    margin-bottom: 10px;
+}
+
+.refine-header p {
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.refine-header img {
+    margin-right: 5px;
+}
+
+.refine-genre {
+    margin-top: 82px;
+    margin-bottom: 10px;
+}
+
+.refine-language {
+    margin-top: 102px;
+    margin-bottom: 31px;
+}
+
+.genre-selection, .language-selection {
+    margin-left: 60px;
+}
+
+.selection {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.selection img {
+    margin-right: 5px;
+}
+
+.selection p {
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center; 
+}
+
+.checkout-history h1 {
+    font-family: 'Open Sans', sans-serif;
+    width: 448px;
+    height: 68px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 42px;
+
+
+}
+
+.book-1, .book-2, .divider {
+    margin: 60px 16px 45px 105px;
+}
+
+#book-cover {
+    width: 175px;
+    height: 279px;
+}
+
+.book-title {
+    margin-left: 20px;
+    font-family: 'Kaushan Script', cursive;
+    width: 223px;
+    height: 116px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.author {
+    margin-top: 10px;
+    margin-left: 70px;
+    font-family: 'Karma', serif;
+    width: 229px;
+    height: 36px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+}
+
+.book-1 {
+    margin-bottom: 32px;
+}
+
+.divider {
+    width: 875px;
+    height: 0px;
+    border: 3px solid #000000;
+}
+
+.hold-bttn {
+    margin: 83px 45px 46px 45px;
+    align-items:center;
+}
+
+.hold-bttn img {
+    width: 50px;
+    height: 42px;
+}
+
+.hold-bttn button {
+    margin-left: 45px;
+    width: 280px;
+    height: 70px;
+    background: #FFFCFC;
+    border: none;
+    font-family: 'Koulen', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.checkout-info {
+    margin-top: 45px;
+}
+
+.checkout-info p {
+    margin-right: 70px;
+    font-family: 'Karma', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+}
