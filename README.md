@@ -1,1 +1,1 @@
-This is a webpage from a figma design
+This is a webpage build from a figma design
