@@ -17,10 +17,9 @@
     display: flex;
     justify-content: space-between;
     height: 140px;
-    margin-bottom: 19px;
 }
 .menu img {
-    width: 90px;
+    width: 75px;
     margin: 35px 511px 58px 34px;
     line-height: 36.6px;
 }
@@ -34,21 +33,22 @@
     background-color: #F2E8E0;
     border: none;
     outline: none;
-    margin: 37px 35px 33px 0;
+    margin: 37px 15px;
     padding: 15px;
-    line-height: 36.6px;
+    max-width: 100%;
+    align-self: center;
 }
 
 .right-nav a {
     font-family: 'Mate SC', serif;
-    font-size: 30px;
+    font-size: 25px;
     text-decoration: none;
     text-align: center;
     font-weight: 400;
     color: black;
 }
 
-input {
+.search-bar input {
     width: 57rem;
     height: 69px;
     margin: 19px 309px 17px 280px;
@@ -62,9 +62,9 @@ input {
     border: none;
 }
 
-input [type=text] {
+.search-bar input [type=text] {
     font-family: 'Khula', sans-serif;
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 400;
 } 
 
@@ -82,8 +82,8 @@ input [type=text] {
 .main-content {
     background-color: #F1D3BD;
     position: absolute;
-    width: 1202px;
-    height: 700px;
+    max-width: 1202px;
+    max-height: 700px;
     display: grid;
     margin: 17px 140px 67px 93px;
     grid-template-columns: 1fr 1fr;
@@ -93,19 +93,19 @@ input [type=text] {
 .main-content h1 {
     font-family: 'Kaushan Script', cursive;
     font-style: normal;
-    font-size: 125px;
+    font-size: 75px;
     line-height: 181px;
-    width: 504px;
+    max-width: 504px;
     margin: 15px 48px 10px 41px;
 }
 
 .page-description {
     font-family: 'Kokoro', sans-serif;
     font-weight: 400;
-    font-size: 32px;
-    width: 525px;
-    height: 307px;
-    margin: 52px 3px 10px 65px;
+    font-size: 26px;
+    max-width: 525px;
+    max-height: 307px;
+    margin: 15px 3px 50px 65px;
     line-height: 48px;
 }
 
@@ -114,7 +114,7 @@ input [type=text] {
     height: 70px;
     background-color: #FFFFFF;
     border: none;
-    margin: 36px 161px 136px 167px;
+    margin: px 161px 136px 167px;
 
 }
 .register a {
@@ -160,8 +160,6 @@ input [type=text] {
     background: #F1D3BD;
     max-width: 1431px;
     height: 1024px;
-    left: 0px;
-    top: 0px;
     padding: 46px 136px 167px 70px;
 }
 
@@ -172,15 +170,15 @@ input [type=text] {
     margin: 53px 136px 167px 70px;
 }
 
-.about-main_left h1 {
+.about-body h1 {
     position: relative;
-    width: 431px;
-    height: 181px;
+    max-width: 431px;
+    max-height: 181px;
     font-family: 'Kaushan Script', cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 125px;
-    line-height: 181px;
+    font-size: 100px;
+    margin-bottom: 34px;
 }
 
 .about-main_left img {
@@ -203,11 +201,12 @@ input [type=text] {
     font-family: 'Kumbh Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 50px;
     text-align: center;
     color: #000000;
-    padding: 100px 17px;
+    padding: 100px 40px;
+    margin: auto;
 }
 
 /* End about page style */
@@ -259,19 +258,16 @@ input [type=text] {
     font-family: 'Khula', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 39px;
     background: #FFFFFF;
-    color: #BCAEAE;
+    height: 70px;
+    padding: 10px;
 }
 
 #email {
     margin-top: 74px;
     margin-bottom: 64px;
-}
-
-#name, #email {
-    height: 70px;
 }
 
 #message {
@@ -285,26 +281,28 @@ textarea {
     font-family: 'Khula', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 39px;
     border: none;
     padding: 20px 15px;
     background: #FFFFFF;
-    color: #BCAEAE;
 }
 
-#submit {width: 256px;
+#submit {
+    width: 256px;
     height: 54px;
     background: #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 32px;
     text-align: center;
     color: #FFFFFF;
     padding: 2px 60px;
-    cursor: pointer;
+    cursor: pointer; 
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 /*End Contact Page style*/
@@ -312,7 +310,7 @@ textarea {
 /* Profile style */
 
 .profile {
-    width: 1440px;
+    max-width: 1440px;
     background: #F1D3BD;
     padding: 101px 145px 106px 35px;
 }
@@ -323,14 +321,13 @@ textarea {
 
 .profile h1 {
     font-family: 'Mate SC', serif;
-    width: 392px;
-    height: 98px;
+    max-width: 392px;
+    max-height: 98px;
     font-style: normal;
     font-weight: 400;
-    font-size: 80px;
+    font-size: 60px;
     line-height: 98px;
     text-align: center;
-    color: #000000;
     margin-right: 35px;
 }
 
@@ -345,7 +342,7 @@ textarea {
     font-weight: 400;
     font-size: 25px;
     width: 339px;
-    height: 34px;
+    height: 26px;
     text-align: center;
     margin: 19px 1066px 98px 35px;
 }
@@ -382,48 +379,39 @@ label {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 23px;
     text-transform: uppercase;
     text-align: left;
     float: left;
-    max-width: 252px;
+    margin-right: 15px;
 }
 
 .form-input {
     display: flex;
-    margin: 20px 0;
+    margin: 3rem 0;
     padding-left: 17px;
 }
 
-.form-background input, .form-background select {
-    position: relative;
-    height: 35px;
-    margin-left: 15px;
-    border-radius: 0;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    display: inline-flex;
+.form-background select {
     background-color: #D9D9D9;
-    color: #000000;
-    padding: 1px 0;
+    border: none;
 }
 
 .form-background input {
-    width: 100%;
-}
-
-#name, #email {
+    position: relative;
     height: 35px;
+    border-radius: 0;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    display: inline-flex;
     background-color: #D9D9D9;
-    color: #000000;
-    padding: 10px 5px;
-}
-
-#email {
-    margin-right: 50px;
+    padding: 1px 0;
+    border: none;
+    padding: 20px 5px;
+    margin-bottom: 35px;
 }
 
 .profile-picture-container {
