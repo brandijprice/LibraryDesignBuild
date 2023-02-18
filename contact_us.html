@@ -13,27 +13,43 @@
       rel="stylesheet"
     />
   </head>
-  <body class="contact-page_background">
-    <div class="contact-background">
-      <div class="contact-form">
-        <h1>Contact us</h1>
-        <form action="contact_form.php">
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="First and Last name"
-          />
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email address"
-          />
-          <textarea name="message" id="message"> </textarea>
-          <input type="submit" id="submit" name="submit" />
-        </form>
+  <body>
+    <header>
+      <div class="nav-bar">
+        <div class="menu">
+          <img src="/images/menu.png" alt="menu icon" />
+        </div>
+        <div class="right-nav">
+          <button><a href="index.html">Home</a></button>
+          <button><a href="about.html">About</a></button>
+          <button><a href="profile.html">Profile</a></button>
+          <button><a href="book-listing.html">Current Recs</a></button>
+          <button><a href="checkout-history.html">History</a></button>
+        </div>
       </div>
-    </div>
+    </header>
+    <main class="contact-page_background">
+      <div class="contact-background">
+        <div class="contact-form">
+          <h1>Contact us</h1>
+          <form action="contact_form.php">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="First and Last name"
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email address"
+            />
+            <textarea name="message" id="message"> </textarea>
+            <input type="submit" id="submit" name="submit" />
+          </form>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
