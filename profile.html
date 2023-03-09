@@ -14,128 +14,150 @@
     />
   </head>
   <body>
-    <header>
-      <div class="nav-bar">
-        <div class="menu">
-          <img src="/images/menu.png" alt="menu icon" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+        <li><a href="profile.html" class="current-page">Profile</a></li>
+        <li><a href="book-listing.html">Book Listing</a></li>
+        <li><a href="book-description.html">Book Description</a></li>
+        <li><a href="checkout-history.html">Checkout History</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="main-profile-container">
+        <div class="profile-header">
+          <h1>My Profile</h1>
+          <p>Fill out your registration here</p>
         </div>
-        <div class="right-nav">
-          <button><a href="index.html">Home</a></button>
-          <button><a href="about.html">About</a></button>
-          <button><a href="contact_us.html">Contact Us</a></button>
-          <button><a href="book-listing.html">Current Recs</a></button>
-          <button><a href="checkout-history.html">History</a></button>
-        </div>
-      </div>
-    </header>
-    <main class="profile">
-      <div class="profile-header">
-        <h1>My Profile</h1>
-        <img src="images/yellow-question.png" alt="profile" width="45" />
-      </div>
-      <p>Fill out your registration here</p>
-      <div class="profile-container">
-        <div class="contact-info-container">
-          <div class="contact-header">
-            <p>Contact Info</p>
+        <div class="profile-container">
+          <div class="contact-info-container">
+            <div class="contact-header">
+              <p>Contact Info</p>
+            </div>
+            <div class="form-background">
+              <div class="profile-form">
+                <div class="profile-form-input">
+                  <label for="title">
+                    <img
+                      src="images/required-symbol.png"
+                      alt="required"
+                      width="18"
+                    />
+                    Title:</label
+                  >
+                  <select name="title" id="title" required>
+                    <option value="select">select one</option>
+                    <option value="Mr">Mr.</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Ms">Ms.</option>
+                  </select>
+                </div>
+                <div class="profile-form-input">
+                  <label for="name"
+                    ><img
+                      src="images/required-symbol.png"
+                      alt="required"
+                      width="18"
+                    />
+                    Name:</label
+                  ><input
+                    type="text"
+                    id="profile-name"
+                    name="name"
+                    placeholder="First and Last Name"
+                    required
+                  />
+                </div>
+                <div class="profile-form-input">
+                  <label for="username"
+                    ><img
+                      src="images/required-symbol.png"
+                      alt="required"
+                      width="18"
+                    />
+                    Username:</label
+                  >
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    required
+                  />
+                </div>
+                <div class="profile-form-input">
+                  <label for="birthday"
+                    ><img
+                      src="images/required-symbol.png"
+                      alt="required"
+                      width="18"
+                    />
+                    D.O.B:</label
+                  >
+                  <input
+                    type="date"
+                    id="birthday"
+                    name="birthday"
+                    required
+                  />
+                </div>
+                <div class="profile-form-input">
+                  <label for="profile-email"
+                    ><img
+                      src="images/required-symbol.png"
+                      alt="required"
+                      width="18"
+                    />
+                    Email Address:</label
+                  >
+                  <input
+                    type="text"
+                    id="profile-email"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div class="profile-form-input">
+                  <label for="password"
+                    ><img
+                      src="images/required-symbol.png"
+                      alt="required"
+                      width="18"
+                    />
+                    Password:</label
+                  >
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                  />
+                </div>
+                <div class="profile-form-input">
+                  <label for="name">Confirm Password:</label>
+                  <input
+                    type="password"
+                    id="confirm-password"
+                    name="confirm-password"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="form-background">
-            <form action="/profile.php">
-              <div class="form-input">
-                <label for="title">
-                  <img
-                    src="images/required-symbol.png"
-                    alt="required"
-                    width="18"
-                  />
-                  Title:</label
-                >
-                <select name="title" id="title" required>
-                  <option value="select">select one</option>
-                  <option value="Mr">Mr.</option>
-                  <option value="Mrs">Mrs</option>
-                  <option value="Ms">Ms.</option>
-                </select>
-              </div>
-              <div class="form-input">
-                <label for="name"
-                  ><img
-                    src="images/required-symbol.png"
-                    alt="required"
-                    width="18"
-                  />
-                  Name:</label
-                ><input
-                  type="text"
-                  id="profile-name"
-                  name="name"
-                  placeholder="First and Last Name" size="35"
-                  required
-                />
-              </div>
-              <div class="form-input">
-                <label for="username"
-                  ><img
-                    src="images/required-symbol.png"
-                    alt="required"
-                    width="18"
-                  />
-                  Username:</label
-                >
-                <input type="text" id="username" name="username" size="35" required />
-              </div>
-              <div class="form-input">
-                <label for="birthday"
-                  ><img
-                    src="images/required-symbol.png"
-                    alt="required"
-                    width="18"
-                  />
-                  D.O.B:</label
-                >
-                <input type="date" id="birthday" name="birthday" size="35" required />
-              </div>
-              <div class="form-input">
-                <label for="profile-email"
-                  ><img
-                    src="images/required-symbol.png"
-                    alt="required"
-                    width="18"
-                  />
-                  Email Address:</label
-                >
-                <input type="text" id="profile-email" name="email" size="35" required />
-              </div>
-              <div class="form-input">
-                <label for="password"
-                  ><img
-                    src="images/required-symbol.png"
-                    alt="required"
-                    width="18"
-                  />
-                  Password:</label
-                >
-                <input type="password" id="password" name="password" size="35" required />
-              </div>
-              <div class="form-input">
-                <label for="name">Re-type Password:</label>
-                <input type="text" id="retype=password" name="retype-password" size="35" />
-              </div>
-            </form>
+          <div class="profile-picture-container">
+            <div class="picture-header">
+              <p>Your Picture</p>
+            </div>
+            <div class="picture-main">
+              <img
+                src="images/default-profile.png"
+                alt="default-profile"
+                width="114"
+              />
+            </div>
+            <button><a href="#">Upload</a></button>
           </div>
-        </div>
-        <div class="profile-picture-container">
-          <div class="picture-header">
-            <p>Your Picture</p>
-          </div>
-          <div class="picture-main">
-            <img
-              src="images/default-profile.png"
-              alt="default-profile"
-              width="114"
-            />
-          </div>
-          <button><a href="#">Upload</a></button>
         </div>
       </div>
     </main>

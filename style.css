@@ -9,15 +9,56 @@
     src: url(/font/Kokoro-Regular.ttf);
 }
 
+
 .welcome-page {
     background-image: url(/images/background.png);
+    width: 100%;
+    padding: 2em 0;
+    margin: auto;
 }
-.nav-bar {
+nav {
     background-color: #B6A497;
-    display: flex;
-    justify-content: space-between;
-    height: 140px;
+    padding: 2em 0;
+    margin: auto;
+
 }
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav li {
+    list-style: none;
+    margin: 0 1em;    
+}
+
+nav a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F2E8E0;
+    font-family: 'Mate SC', serif;
+    font-weight: 400;
+    font-size: 1.56rem;
+    padding: 0.5em;
+    color: #000000;
+    border-radius: 2.5px;
+}
+
+nav a:hover, a:focus {
+    color: #BCAEAE;
+}
+
+.current-page {
+    border-bottom: 1.5px solid #000000;
+}
+
+.current-page:hover {
+    color: #000000;
+}
+
 .menu img {
     width: 75px;
     margin: 35px 511px 58px 34px;
@@ -41,30 +82,33 @@
 
 .right-nav a {
     font-family: 'Mate SC', serif;
-    font-size: 25px;
+    font-size: 1.56rem;
     text-decoration: none;
     text-align: center;
     font-weight: 400;
-    color: black;
+}
+
+.search-bar form {
+    margin: 2.2em 18em;
 }
 
 .search-bar input {
-    width: 57rem;
+    width: 30em;
     height: 69px;
-    margin: 19px 309px 17px 280px;
     background: #FFFFFF;
-    border-radius: 30px;
+    border-radius: 20px;
     font-family: 'Khula', sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 400;
-    padding: 15px 80px 5px 15px;
+    padding: 15px 80px 5px 19px;
     line-height: 51.38px;
-    border: none;
+    border: 1px solid;
+    
 }
 
 .search-bar input [type=text] {
     font-family: 'Khula', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
 } 
 
@@ -75,37 +119,43 @@
 .search-icon {
     position: absolute;
     top: 50%;
-    margin-left: 68.75rem;
+    margin-left: 54rem;
     transform: translate(50%, -50%);
 }
 
 .main-content {
     background-color: #F1D3BD;
-    position: absolute;
     max-width: 1202px;
-    max-height: 700px;
-    display: grid;
-    margin: 17px 140px 67px 93px;
-    grid-template-columns: 1fr 1fr;
-    
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
 }
+
+.main-left {
+    width: 50%;
+}
+
+.main-right {
+    width: 50%;
+}
+
 
 .main-content h1 {
     font-family: 'Kaushan Script', cursive;
     font-style: normal;
-    font-size: 75px;
+    font-size: 4.68rem;
     line-height: 181px;
     max-width: 504px;
-    margin: 15px 48px 10px 41px;
+    margin: 0.93em 1.81em 0 2.81em;
 }
 
 .page-description {
     font-family: 'Kokoro', sans-serif;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 1.625rem;
     max-width: 525px;
-    max-height: 307px;
-    margin: 15px 3px 50px 65px;
+    margin: 15px 5px 50px 65px;
     line-height: 48px;
 }
 
@@ -114,11 +164,11 @@
     height: 70px;
     background-color: #FFFFFF;
     border: none;
-    margin: px 161px 136px 167px;
+    margin: 2.25em 10.06em 8.5em 10.44em;
 
 }
 .register a {
-    width: 200px;
+    max-width: 12.5em;
     height: 40px;
     font-family: 'Kumbh Sans', sans-serif;
     font-style: normal;
@@ -154,310 +204,405 @@
     margin-bottom: 35px;
 }
 
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+       padding: .5em 0;
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+    }
+
+    .main-content h1,
+    .main-content h2 {
+        margin: auto;
+    }
+
+    .main-content h1 {
+        text-align: center;
+    }
+
+    .main-content h2 {
+        margin-top: 0;
+    }
+
+    .main-left,
+    .main-right {
+        width: 100%;
+    }
+
+    .page-description {
+        margin: 1em;
+    }
+
+    .search-bar form {
+        display: none;
+    }
+
+    .register {
+        display: flex;
+    }
+
+    .register button {
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
+    .main-right h2 {
+        margin: 1.5em auto;
+    }
+
+    .main-content img {
+        display: flex;
+        margin: auto;
+    }
+
+    .top-books img,
+    .bottom-books img {
+        margin-top: 1em;
+    }
+
+    .bottom-books {
+        margin-top: 0;
+    }
+}
 /* About Page CSS */
 
 .about-body {
-    background: #F1D3BD;
-    max-width: 1431px;
-    height: 1024px;
-    padding: 46px 136px 167px 70px;
-}
-
-.about-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 1225px;
-    margin: 53px 136px 167px 70px;
+    background: #F1D3BD; 
+    padding: 2.875em 8.5em 10.4em 4.375em;
 }
 
 .about-body h1 {
-    position: relative;
-    max-width: 431px;
+    max-width: 27em;
     max-height: 181px;
     font-family: 'Kaushan Script', cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 100px;
-    margin-bottom: 34px;
+    font-size: 5rem;
+    margin-bottom: 1em;
 }
 
-.about-main_left img {
-    position: absolute;
-    width: 578px;
-    height: 577px;
-    margin-right: 5px;
+.about-main {
+    display: flex;
+    
+    margin: 0 5em;
+}
+
+.about-main_left {
+    max-width: 100%;
+    height: auto;
 }
 
 .about-right_background {
     background-color: #FFFFFF;
-    height: 577px;
-    width: 647px;
-    display: grid;
-    margin-top: 180px;
-    margin-bottom: 167px;
+    width: 40.44em;
+    
 }
 
 .about-right_background p {
     font-family: 'Kumbh Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 1.8rem;
     line-height: 50px;
     text-align: center;
     color: #000000;
-    padding: 100px 40px;
+    padding: 5em 2.5em;
     margin: auto;
+}
+
+@media (max-width: 768px) {
+
+    .about-body {
+        margin-bottom: 0em;
+    }
+
+    .about-body h1 {
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
+
+    .about-main {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-main img {
+        width: 100%;
+        margin: auto;
+    }
+
+    .about-main_left {
+        margin-bottom: 2em;
+    }
+
+    .about-right_background {
+        width: 100%;
+    }
+
+    .about-right_background p {
+        padding: 1.5em 1em;
+    }
+
+    
 }
 
 /* End about page style */
 
 /* Contact Form */
 
-.contact-page_background {
-    position: absolute;
-    background: #F1D3BD;
-    padding: 75px 343px 49px 343px;
-}
-
 .contact-background {
-    background: url(images/contact-background.png);
-    width: 745px;
-    margin-top: 6px;
-    margin-bottom: 34px;
+    background-image: url(images/contact-background.png);
+    background-repeat: no-repeat;
+    max-width: 760px;
+    width: 100%;
+    margin: 3em auto;
+    padding: 1em;
+    text-align: center;
 }
 
-.contact-form  h1{
-    margin: 6px 95px 34px 95px;
-    width: 554px;
-    height: 181px;
-    left: 439px;
-    top: 81px;
+.contact-background .contact-title {
     font-family: 'Kaushan Script', cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 125px;
-    line-height: 181px;
-    color: #000000;
+    font-size: 5rem;
     text-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
-}
-
-.contact-form form {
     text-align: center;
 }
 
-.contact-form input {
-    width: 503px;
-    margin-left: 121px;
-    margin-right: 121px;
+.contact-background .contact-form {
+    width: 100%;
+    margin-top: 1em;
+    padding: 1em auto;
+}
+
+.contact-form {
+    margin: 0 auto;
+}
+
+.contact-background .contact-form .contact-form-input {
+    margin-bottom: 2.5em;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
     background-color: #FFFFFF;
     border: none;
-    border-radius: 0;
-}
-
-#name, #email {
+    font-size: 1.25rem;
+    padding: 0.5em;
     font-family: 'Khula', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 39px;
-    background: #FFFFFF;
-    height: 70px;
-    padding: 10px;
 }
 
-#email {
-    margin-top: 74px;
-    margin-bottom: 64px;
+.contact-form textarea {
+    resize: none;
+    height: 15em;
 }
 
-#message {
-    width: 503px;
-    height: 264px;
-}
-
-textarea {
-    width: 92px;
-    height: 39px;
-    font-family: 'Khula', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 39px;
-    border: none;
-    padding: 20px 15px;
-    background: #FFFFFF;
-}
-
-#submit {
-    width: 256px;
-    height: 54px;
-    background: #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.contact-form input[type="submit"] {
+    max-width: 50%;
+    background-color: #000000;
     font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
+    background: #000000;
     color: #FFFFFF;
-    padding: 2px 60px;
-    cursor: pointer; 
-    margin-top: 15px;
-    margin-bottom: 15px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background: dimgrey;
+}
+
+@media (max-width: 768px) {
+    
+    .contact-page-background,
+    .contact-background {
+        width: 95%;
+    }
+
+    .contact-background .contact-title {
+        font-size: 3rem;
+    }
+
+    .contact-form {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 
 /*End Contact Page style*/
 
 /* Profile style */
 
-.profile {
-    max-width: 1440px;
-    background: #F1D3BD;
-    padding: 101px 145px 106px 35px;
+.main-profile-container {
+    margin: 2em 5em;
 }
 
 .profile-header {
-    display: flex;
+    margin: 3em;
 }
 
-.profile h1 {
+.profile-header h1 {
     font-family: 'Mate SC', serif;
-    max-width: 392px;
-    max-height: 98px;
     font-style: normal;
     font-weight: 400;
-    font-size: 60px;
-    line-height: 98px;
-    text-align: center;
-    margin-right: 35px;
+    font-size: 3.75rem;
 }
 
-.profile-header img {
-    height: 41px;
-    margin-top: 35px;
-}
-
-.profile p {
+.profile-header p {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
-    width: 339px;
-    height: 26px;
-    text-align: center;
-    margin: 19px 1066px 98px 35px;
+    font-size: 1.5rem;  
 }
 
 .profile-container {
     display: flex;
+    justify-content: space-between;
 }
 
 .contact-info-container {
-    width: 770px;
-    height: 910px;
-    left: 35px;
-    top: 350px;
+    max-width: 48em;
+    width: 100%;
+    height: auto;
     background: #F3F3F3;
-}
-
-.contact-header p {
+ }
+ 
+ .contact-header p {
     font-family: 'Open Sans', sans-serif;
-    width: 770px;
-    height: 52px;
+    width: 100%;
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 1.5rem;
     text-align:left;
     color: #000000;
     text-transform: uppercase;
-    margin: 0px 571px 9px 0;
-    padding: 9px 571px 9px 11px;
+    margin: 0 23em 0.36em 0 0.36em;
+    padding: 0.375em 0.5em;
     background-color: #D9D9D9;
-}
+ }
 
-label {
-    position: relative;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 23px;
-    text-transform: uppercase;
-    text-align: left;
-    float: left;
-    margin-right: 15px;
-}
-
-.form-input {
+ .profile-form-input {
+    padding: 1.5em;
+    margin-bottom: 1em;
     display: flex;
-    margin: 3rem 0;
-    padding-left: 17px;
-}
+    align-items: center;
+ }
 
-.form-background select {
-    background-color: #D9D9D9;
-    border: none;
-}
+ .profile-form-input label {
+     width: 10em;
+     margin-right: 0.9em;
+     font-family: 'Open Sans', sans-serif;
+     font-style: normal;
+     font-weight: 700;
+     font-size: 23px;
+     text-transform: uppercase;
+ }
 
-.form-background input {
-    position: relative;
-    height: 35px;
-    border-radius: 0;
-    text-align: left;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    display: inline-flex;
-    background-color: #D9D9D9;
-    padding: 1px 0;
-    border: none;
-    padding: 20px 5px;
-    margin-bottom: 35px;
-}
+ .profile-form-input input,
+ .profile-form-input select {
+     background-color: #D9D9D9;
+     width: 100%;
+     height: 1.25em;
+     font-size: 1.25rem;
+     border: none;
+     font-family: 'Open Sans', sans-serif;
+     font-style: normal;
+     font-weight: 400;
+ }
 
-.profile-picture-container {
-    width: 350px;
-    height: 350px;
+ .profile-form-input input[type="select"],
+ .profile-form-input input[type="text"],
+ .profile-form-input input[type="password"],
+ .profile-form-input input[type="email"],
+ .profile-form-input input[type="date"],
+ .profile-form-input input[type="password"] {
+     padding: 1.25em 0.25em;
+     font-size: 20px;
+ }
+
+ .profile-picture-container {
+    width: 25%;
+    height: max-content;
     background: #F3F3F3;
-    margin-left: 140px;
-    margin-right: 145px;
     text-align: center;
-}
+ }
 
-.profile-picture-container p {
-    width: 350px;
-    height: 70px;
-    background: #D9D9D9;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-left: 0;
-    margin-bottom: 35px;
-    text-align: center;
-    padding: 18px 80px;
-}
+ .profile-picture-container p {
+     width: 100%;
+     background: #D9D9D9;
+     font-family: 'Open Sans', sans-serif;
+     font-style: normal;
+     font-weight: 700;
+     font-size: 1.5rem;
+     text-transform: uppercase;
+     margin: 0 0 1.45em 0;
+     padding: 8px 10px;
+ }
 
-.picture-main img {
+ .picture-main img {
     margin-bottom: 28px;
-}
-
-.profile-picture-container button {
+ } 
+ .profile-picture-container button {
     background: #ABABAB;
     padding: 13px 34px;
     border: none;
     margin-bottom: 17px;
-}
-
-.profile-picture-container a {
+    border-radius: 4px;
+    cursor: pointer;
+ }
+ 
+ 
+ .profile-picture-container a {
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 1.25rem;
     color: #000000;
     text-transform: uppercase;
+ }
+ 
+
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .profile-header {
+        text-align: center;
+    }
+
+    .profile-picture-container,
+    .contact-info-container {
+        margin: 1.5em auto;
+        text-align: center;
+    }
+
+    .profile-form-input img {
+        display: none;
+    }
+
+    .profile-picture-container {
+        width: 65%;
+    }
 }
 
 /* Book Listing Style */
@@ -470,16 +615,15 @@ label {
     text-align: center;
     margin: 36px 357px 52px 372px;
     font-family: 'Kaushan Script', cursive;
-    width: 706px;
-    height: 87px;
+    width: 50%;
     font-style: normal;
     font-weight: 400;
-    font-size: 60px;
+    font-size: 3.75rem;
 }
 
 .book-listing {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .book-listing-left {
@@ -520,8 +664,8 @@ label {
 }
 
 .book-listing-main img {
-    width: 200px;
-    height: 327px;
+    width: 12.5em;
+    height: auto;
     margin-right: 31px;
 }
 
@@ -533,7 +677,7 @@ label {
     font-family: 'Kaushan Script', cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 2rem;
     line-height: 58px;
     text-align: center;
     margin-left: 14px;
@@ -555,9 +699,34 @@ label {
     font-family: 'Karma', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 26px;
     text-align: left;
+}
+
+@media (max-width: 768px) {
+
+    .listing-body {
+        width: 95%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .listing-body h1 {
+        width: 100%;
+        margin: 1em auto;
+        font-size: 2.5rem;
+    }
+
+    .book-listing {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .book-listing-container {
+        width: 95%;
+    }
+
 }
 
 /* End Book Listing Page */
@@ -568,14 +737,20 @@ body {
     background: #F1D3BD;
 }
 
+.book-description-main {
+    max-width: 120rem;
+    width: 100%;
+}
+
 .description-container {
-    margin: 94px 35px 44px 35px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 2em;
 }
 
 .description-left {
-    margin-right: 50px;
+    margin-right: 3.125em;
 }
 
 .description-book-info {
@@ -585,80 +760,78 @@ body {
 }
 
 .description-book-info img {
-    width: 245px;
+    width: 15em;
     height: auto;
-    margin-right: 35px;
+    margin-right: 2.1875em;
 }
 
 .rating {
-    margin-top: 5px;
-    margin-left: -95px;
+    margin-top: 0.3em;
+    float: left;
+    align-items: center;
+    
 }
 
 .rating img {
-    margin-right: 5px;
-    width: 41px;
-    height: 47px;
+    margin-right: 0.3em;
+    width: 2.5em;
 }
 
 .book-info {
     text-align: center;
-    align-items: center;
 }
 
 .book-info h2 {
     font-family: 'Kaushan Script', cursive;
-    width: 223px;
-    height: 116px;
+    width: 7.5em;
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 2rem;
     text-align: center;
-    margin-bottom: 15px;
-    margin-left: 35px;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
 }
 
 .book-info h3 {
     font-family: 'Koulen', cursive;
     font-weight: 400;
-    font-size: 30px;
-    width: 315px;
-    height: 57px;
+    font-size: 1.875rem;
+    width: 10.5em;
 }
 
 .book-info p {
     font-family: 'Karma', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    width: 315px;
-    height: 57px;
+    font-size: 1.25rem;
+    width: 15.75em;
 }
 
 .description-book-info button {
     font-family: 'Koulen', cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 1.875rem;
     text-align: center;
-    width: 280px;
-    height: 70px;
+    width: 9.3em;
+    height: 2.3em;
+    float: left;
     background: #FFFAFA;
-    margin: 30px 105px 16px 15px;
+    margin: 1em 3.5em 0.5em 0.5em;
     border: none;
 }
 
 .description-category {
-    margin-top: 16px;
-    margin-bottom: 35px;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
 }
 
 .description-category p {
     font-family: 'Koulen', cursive;
-    width: 650px;
+    width: 22em;
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 .description-category a {
@@ -666,20 +839,54 @@ body {
 }
 
 .quotes {
-    width: 650px;
-    height: 385px;
+    width: 41.5em;
     background: #E7E2E2;
-    padding: 25px 15px;
+    padding: 1.5em 1em;
 }
 
 .quotes p {
     font-family: 'Kosugi Maru', sans-serif;
-    width: 633px;
+    width: 35em;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #000000;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
+}
+
+@media (max-width: 768px) {
+
+    .book-description-main {
+        width: 95%;
+        margin: auto;
+    }
+    
+    .description-container {
+        flex-direction: column;
+        width: 95%;
+        margin: 5em auto;
+    }
+
+    .description-left,
+    .description-right {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .description-left {
+        margin-bottom: 3em;
+    }
+
+    .description-category p {
+        width: 95%;
+        margin: auto;
+    }
+
+    .quotes,
+    .quotes p {
+        width: 95%;
+    }
+    
 }
 
 /* End of Description Style*/
@@ -767,95 +974,132 @@ body {
 
 .checkout-history h1 {
     font-family: 'Open Sans', sans-serif;
-    width: 448px;
-    height: 68px;
+    width: 9em;
     font-style: normal;
     font-weight: 800;
-    font-size: 50px;
+    font-size: 3.125rem;
     text-align: center;
-    margin-top: 25px;
-    margin-left: 42px;
+    margin-top: 0.5em;
+    margin-left: 0.84em;
 
 
 }
 
 .book-1, .book-2, .divider {
-    margin: 60px 16px 45px 105px;
+    margin: 3.75em 1em 2.8em 5em;
 }
 
 #book-cover {
-    width: 175px;
-    height: 279px;
+    width: 11em;
+    height: 17.5em;
 }
 
 .book-title {
-    margin-left: 20px;
+    margin-left: 0.4em;
+    margin-bottom: 0.3em;
     font-family: 'Kaushan Script', cursive;
-    width: 223px;
-    height: 116px;
+    width: 9em;
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center;
     text-transform: uppercase;
 }
 
 .author {
-    margin-top: 10px;
-    margin-left: 70px;
+    margin-top: 0.5em;
+    margin-left: 3em;
     font-family: 'Karma', serif;
-    width: 229px;
-    height: 36px;
+    width: 10em;
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 1.5rem;
     text-align: center;
 }
 
-.book-1 {
-    margin-bottom: 32px;
-}
-
 .divider {
-    width: 875px;
-    height: 0px;
     border: 3px solid #000000;
+    max-width: 100%;
+    width: 55em; 
 }
 
 .hold-bttn {
-    margin: 83px 45px 46px 45px;
-    align-items:center;
+    margin: 3em 2.8em 2.875em 2.8125em;
 }
 
 .hold-bttn img {
-    width: 50px;
-    height: 42px;
+    position: relative;
+    width: 3.125em;
+    margin-top: 1em;
 }
 
 .hold-bttn button {
-    margin-left: 45px;
-    width: 280px;
-    height: 70px;
+    position: absolute;
+    margin-left: 1.5em;
+    width: 9.3em;
+    height: 2.3em;
     background: #FFFCFC;
     border: none;
     font-family: 'Koulen', cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 1.875rem;
     text-align: center;
     cursor: pointer;
 }
 
 .checkout-info {
-    margin-top: 45px;
+    margin-top: 2.8em;
+    margin-left: 1.5em;
 }
 
 .checkout-info p {
-    margin-right: 70px;
     font-family: 'Karma', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
-    line-height: 36px;
-    text-align: center;
+    font-size: 1.56rem;
+}
+
+@media (max-width: 768px) {
+
+    .history-container {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
+    .refine-section,
+    .hold-bttn {
+        display: none;
+    }
+
+    .checkout-history {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .checkout-history h1 {
+        margin: 1.5em auto;
+        width: 100%;
+    }
+
+    .book-1,
+    .divider,
+    .book-2 {
+        margin: 3em auto;
+        width: 95%;
+    }
+}
+
+/* End Checkout Histroy */
+
+@media (max-width: 768px) {
+    
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+       padding: .5em 0;
+    }
 }

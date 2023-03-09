@@ -14,40 +14,43 @@
     />
   </head>
   <body>
-    <header>
-      <div class="nav-bar">
-        <div class="menu">
-          <img src="/images/menu.png" alt="menu icon" />
-        </div>
-        <div class="right-nav">
-          <button><a href="index.html">Home</a></button>
-          <button><a href="about.html">About</a></button>
-          <button><a href="profile.html">Profile</a></button>
-          <button><a href="book-listing.html">Current Recs</a></button>
-          <button><a href="checkout-history.html">History</a></button>
-        </div>
-      </div>
-    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact_us.html" class="current-page">Contact Us</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="book-listing.html">Book Listing</a></li>
+        <li><a href="book-description.html">Book Description</a></li>
+        <li><a href="checkout-history.html">Checkout History</a></li>
+      </ul>
+    </nav>
     <main class="contact-page_background">
       <div class="contact-background">
+        <h1 class="contact-title">Contact us</h1>
         <div class="contact-form">
-          <h1>Contact us</h1>
-          <form action="contact_form.php">
+          <div class="contact-form-input">
             <input
               type="text"
               id="name"
               name="name"
               placeholder="First and Last name"
             />
+          </div>
+          <div class="contact-form-input">
             <input
               type="email"
               id="email"
               name="email"
               placeholder="Email address"
             />
+          </div>
+          <div class="contact-form-input">
             <textarea name="message" id="message"> </textarea>
-            <input type="submit" id="submit" name="submit" />
-          </form>
+          </div>
+          <div class="contact-form-input">
+            <input type="submit" value="Submit" class="submit" />
+          </div>
         </div>
       </div>
     </main>
