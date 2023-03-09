@@ -14,21 +14,22 @@
     />
   </head>
   <body>
-    <header>
-      <div class="nav-bar">
-        <div class="menu">
-          <img src="/images/menu.png" alt="menu icon" />
-        </div>
-        <div class="right-nav">
-          <button><a href="index.html">Home</a></button>
-          <button><a href="about.html">About</a></button>
-          <button><a href="contact_us.html">Contact Us</a></button>
-          <button><a href="profile.html">Profile</a></button>
-          <button><a href="book-listing.html">Current Recs</a></button>
-        </div>
-      </div>
-    </header>
-    <div class="history-container">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="book-listing.html">Book Listing</a></li>
+        <li><a href="book-description.html">Book Description</a></li>
+        <li>
+          <a href="checkout-history.html" class="current-page"
+            >Checkout History</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main class="history-container">
       <div class="refine-section">
         <div class="refine-title">
           <p>Refine by:</p>
@@ -113,11 +114,11 @@
                 <img src="images/heart-unchecked.png" alt="unchecked heart" />
                 <button>Place on Hold</button>
               </div>
+              <div class="checkout-info">
+                <p>Last checkout on 9/7/2020</p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>4 copies available</p>
+              </div>
             </div>
-          </div>
-          <div class="checkout-info">
-            <p>Last checkout on 9/7/2020</p>
-            <p>4 copies available</p>
           </div>
         </div>
         <div class="divider"></div>
@@ -135,14 +136,14 @@
                 <img src="images/heart-unchecked.png" alt="unchecked heart" />
                 <button>Place on Hold</button>
               </div>
+              <div class="checkout-info">
+                <p>Last checkout on 9/7/2020</p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>9 copies available</p>
+              </div>
             </div>
-          </div>
-          <div class="checkout-info">
-            <p>Last checkout on 9/7/2020</p>
-            <p>9 copies available</p>
           </div>
         </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
